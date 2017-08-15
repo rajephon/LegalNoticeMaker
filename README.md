@@ -14,6 +14,10 @@ pip3 install jinja2
 ```
 
 ## 사용법
+0. 내려받기
+```
+git clone --recursive https://github.com/rajephon/LegalNoticeMaker
+```
 1. swinfo.csv 작성
 2. data.csv 작성
 3. LegalNoticeMaker.py 동작
