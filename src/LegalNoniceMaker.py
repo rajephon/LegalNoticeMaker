@@ -25,7 +25,7 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 class LegalNoticeMaker:
     def __init__(self, swinfo_file="swinfo.csv", ossinfo_file="data.csv"):
         self.env = Environment(loader=FileSystemLoader(os.path.join(PATH, 'templates')))
-        self.txt_maker = self.env.get_template('legal-notice-txt.template')
+        self.txt_maker = self.env.get_template('legal-notice-html.template')
         self.oss_list = []
         self.oss_license_list = []
         self.oss_license_dict = {}
@@ -87,7 +87,7 @@ class LegalNoticeMaker:
     def readLicenseNotice(self, oss_license):
         notice = ""
 
-        license_file = "..\\license-list\\" + oss_license + ".txt"
+        license_file = "../license-list/" + oss_license + ".txt"
 
         try:
             fo = open(license_file, "r")
@@ -99,7 +99,7 @@ class LegalNoticeMaker:
         return notice
 
     def makeLegalNotice(self):
-        fo = open("output.txt", "w")
+        fo = open("output.html", "w")
         fo.write(self.txt_maker.render(info=self.info, oss_list=self.oss_list, oss_license_list=self.oss_license_list))
         fo.close()
 

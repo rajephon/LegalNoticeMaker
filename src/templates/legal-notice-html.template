@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <style type="text/css">
+   h4 { margin-bottom:0px; }
+   .desc { padding-left:15px; }
+   p, span { color: #555; }
+   pre { white-space:pre-wrap; }
+ </style>
+</head>
+<body>
+<h2>Open Source Software Notice</h2>
+
+<p>This application ({{info.sw}}) is Copyright (c) {{info.sw_year}}, {{info.company_name}}. All Rights Reserved.<br>
+This application use Open Source Software (OSS).<br>
+You can find the source code of these open source projects, along with applicable license information, below.<br>
+We are deeply grateful to these developers for their work and contributions.<br>
+Any questions about our use of licensed work can be sent to <a href="mailto:{{info.company_email}}" target="_blank">{{info.company_email}}</a></p>
+<hr>
+{% for oss in oss_list %}<h4>{{oss.oss}}</h4>
+<div class="desc">{% if oss.oss_etc == "" %}<a href="{{oss.oss_url}}" target="_blank">{{oss.oss_url}}</a><br>
+{{oss.oss_copyright}}<br>
+{{oss.oss_license}}<br>
+{% else %}<a href="{{oss.oss_url}}" target="_blank">{{oss.oss_url}}</a><br>
+{{oss.oss_etc}}<br>
+{{oss.oss_copyright}}<br>
+{{oss.oss_license}}<br>
+{% endif %}</div>
+{% endfor %}<hr>
+{% for oss_license in oss_license_list %}<h3>{{oss_license.oss_license}}</h3>
+<pre>{{oss_license.oss_license_notice}}</pre>
+<hr>
+{% endfor %}
+</body>
+</html>
