@@ -2,7 +2,7 @@
 OSS 고지문 작성
 forked from [ppiazi/LegalNoticeMaker](https://github.com/ppiazi/LegalNoticeMaker)
 
-ppiazi님 버전에서 본인의 필요에 의하여 단지 가벼운 수정과 HTML 템플릿 형태로 바꾼 것 뿐입니다.
+ppiazi님 버전에서 본인의 필요에 의하여 가벼운 수정과 HTML 템플릿 형태로 바꾸었습니다
 
 ## 필요사항
 ### python3
