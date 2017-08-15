@@ -27,4 +27,4 @@ python3 ./LegalNoticeMaker.py -s swinfo.csv -d data.csv
 ```
 
 ## LICENSE
-MIT.
+Apache-2.0
