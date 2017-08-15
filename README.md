@@ -1,6 +1,7 @@
 # LegalNoticeMaker
 OSS 고지문 작성
 forked from [ppiazi/LegalNoticeMaker](https://github.com/ppiazi/LegalNoticeMaker)
+ppiazi님 버전에서 본인의 필요에 의하여 단지 가벼운 수정과 HTML 템플릿 형태로 바꾼 것 뿐입니다.
 
 ## 필요사항
 ### python3
@@ -24,3 +25,6 @@ git clone --recursive https://github.com/rajephon/LegalNoticeMaker
 ```
 python3 ./LegalNoticeMaker.py -s swinfo.csv -d data.csv
 ```
+
+## LICENSE
+MIT.
